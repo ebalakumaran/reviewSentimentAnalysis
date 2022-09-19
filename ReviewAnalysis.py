@@ -3,8 +3,8 @@ import sklearn
 import pickle
 import streamlit as st
 
-save_cv = pickle.load(open('C:/Users/be1031/PycharmProjects/pythonProject/count-Vectorizer.sav','rb'))
-model = pickle.load(open('C:/Users/be1031/PycharmProjects/pythonProject/Review_Classification.sav', 'rb'))
+save_cv = pickle.load(open('count-Vectorizer.sav','rb'))
+model = pickle.load(open('Review_Classification.sav', 'rb'))
 
 def test_model(sentence):
     sen = save_cv.transform([sentence]).toarray()
@@ -15,7 +15,7 @@ def test_model(sentence):
         return 'Negative review'
 
 def main():
-    st.title('Review Sentiment analaysis')
+    st.title('Review Sentiment analysis')
     sentence=st.text_input('Enter the sentence to analyse')
     result=''
     if st.button('Analyse'):
