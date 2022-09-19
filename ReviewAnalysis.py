@@ -3,8 +3,8 @@ import sklearn
 import pickle
 import streamlit as st
 
-save_cv = pickle.load(open('C:/Users/be1031/Downloads/count-Vectorizer.sav','rb'))
-model = pickle.load(open('C:/Users/be1031/Downloads/Review_Classification.sav', 'rb'))
+save_cv = pickle.load(open('C:/Users/be1031/PycharmProjects/pythonProject/count-Vectorizer.sav','rb'))
+model = pickle.load(open('C:/Users/be1031/PycharmProjects/pythonProject/Review_Classification.sav', 'rb'))
 
 def test_model(sentence):
     sen = save_cv.transform([sentence]).toarray()

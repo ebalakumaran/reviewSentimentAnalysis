@@ -1,8 +1,8 @@
 import numpy as np
 import sklearn
 import pickle
-save_cv = pickle.load(open('C:/Users/be1031/Downloads/count-Vectorizer.sav','rb'))
-model = pickle.load(open('C:/Users/be1031/Downloads/Review_Classification.sav', 'rb'))
+save_cv = pickle.load(open('count-Vectorizer.sav','rb'))
+model = pickle.load(open('Review_Classification.sav', 'rb'))
 
 def test_model(sentence):
     sen = save_cv.transform([sentence]).toarray()
