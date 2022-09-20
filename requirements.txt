@@ -5,6 +5,4 @@ sklearn==0.0
 scikit-learn==1.1.2
 nltk==3.7
 regex==2022.9.13
-sklearn
-re
 pickle
