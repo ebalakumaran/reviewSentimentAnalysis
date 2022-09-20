@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-
+print(st.__version__)
 save_cv = pickle.load(open('count-Vectorizer.sav','rb'))
 model = pickle.load(open('Review_Classification.sav', 'rb'))
 
