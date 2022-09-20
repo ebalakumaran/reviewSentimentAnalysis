@@ -11,6 +11,6 @@ def test_model(sentence):
         return 'Positive review'
     else:
         return 'Negative review'
-sen = "This is a nice movie"
+sen = "I hate the food and its taste is also not too good"
 res = test_model(sen)
 print(res)
